@@ -22,6 +22,7 @@ public class PlayerControl : MonoBehaviour
 
     public TextMeshProUGUI powerText;
     public TextMeshProUGUI itemText;
+    
 
     // Reference to the health controller
     public HealthController healthController;
@@ -126,6 +127,7 @@ public class PlayerControl : MonoBehaviour
     void SetPowerText()
     {
         powerText.text = "Power: " + power;
+
     }
 
     // Update the item text UI

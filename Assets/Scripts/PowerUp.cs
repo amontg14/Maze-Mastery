@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Unity.VisualScripting;
 using TMPro;
 
 public class PowerUp : MonoBehaviour
 {
-    private string power;
-    private string item;
+    public bool jump;
+    public bool doublejump;
+    public bool climb;
+    public bool jetpack;
+
+    public string power;
+    public string item;
 
     public TextMeshProUGUI powerText;
     public TextMeshProUGUI itemText;
-    
 
     // Reference to the health controller
     public HealthController healthController;
@@ -31,6 +34,11 @@ public class PowerUp : MonoBehaviour
         SetPowerText(); // Update power display
         item = "None";  // Initial item setting
         SetItemText();  // Update item display
+
+        jump = false;
+        doublejump = false;
+        climb = false;
+        jetpack = false;
     }
 
     void OnTriggerEnter(Collider other)
@@ -41,6 +49,23 @@ public class PowerUp : MonoBehaviour
             other.gameObject.SetActive(false);
             power = other.gameObject.name;
             SetPowerText();
+
+            if(power == "Jump")
+            {
+                jump = true;
+            }
+            else if(power == "Double Jump")
+            {
+                doublejump = true;
+            }
+            else if (power == "Climb")
+            {
+                climb = true;
+            }
+            else if (power == "Jetpack")
+            {
+                jetpack = true;
+            }
         }
 
         if (other.gameObject.CompareTag("Item"))
@@ -56,12 +81,11 @@ public class PowerUp : MonoBehaviour
             healthController.TakeDamage(10.0f); // Specify damage amount
         }
     }
-    // Update the power text UI
 
+    // Update the power text UI
     void SetPowerText()
     {
         powerText.text = "Power: " + power;
-
     }
 
     // Update the item text UI

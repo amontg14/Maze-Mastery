@@ -2102,7 +2102,7 @@ MonoBehaviour:
   currentPower: 
   moveSpeed: 4
   groundDrag: 5
-  jetpackForce: 5
+  jetpackForce: 15
   jumpForce: 9
   jumpCooldown: 0.25
   airMultiplier: 0.4

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.08544102, g: 0.36408654, b: 0.4361766, a: 1}
+  m_IndirectSpecularColor: {r: 0.08544279, g: 0.36412224, b: 0.43635413, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1018,7 +1018,7 @@ GameObject:
   - component: {fileID: 182953220}
   - component: {fileID: 182953219}
   - component: {fileID: 182953218}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1446,7 +1446,7 @@ GameObject:
   - component: {fileID: 259488108}
   - component: {fileID: 259488107}
   - component: {fileID: 259488106}
-  m_Layer: 7
+  m_Layer: 6
   m_Name: Right Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2235,9 +2235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: adb17ff2024dd44c888e2ac447069feb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jump: 1
-  doublejump: 1
-  climb: 1
+  jump: 0
+  doublejump: 0
+  climb: 0
   jetpack: 0
   power: D
   item: 
@@ -5689,9 +5689,9 @@ GameObject:
   - component: {fileID: 1063901708}
   - component: {fileID: 1063901707}
   - component: {fileID: 1063901706}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Right Wall (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6050,7 +6050,7 @@ GameObject:
   - component: {fileID: 1147334039}
   - component: {fileID: 1147334038}
   - component: {fileID: 1147334037}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Right Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8077,9 +8077,9 @@ GameObject:
   - component: {fileID: 1645733322}
   - component: {fileID: 1645733321}
   - component: {fileID: 1645733320}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Left Wall
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

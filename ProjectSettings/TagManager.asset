@@ -9,6 +9,8 @@ TagManager:
   - hurt
   - Wall
   - ClimbWall
+  - RespawnTrigger
+  - Checkpoint
   layers:
   - Default
   - TransparentFX

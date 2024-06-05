@@ -10,6 +10,7 @@ public class HealthController : MonoBehaviour
     public Image healthBarImage; // Assign this in the Inspector
     public float health = 100f; //starting health
     private float maxHealth = 100f; //max health
+    public GameObject MainMenuOBJ; 
 
     // Call this method to reduce health
     public void TakeDamage(float damageAmount)
@@ -36,5 +37,6 @@ public class HealthController : MonoBehaviour
     {
         Debug.Log("Health is zero, resetting game.");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        MainMenuOBJ.SetActive(true);
     }
 }

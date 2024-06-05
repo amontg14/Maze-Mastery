@@ -7209,7 +7209,7 @@ MonoBehaviour:
   currentPower: 
   moveSpeed: 4
   groundDrag: 5
-  jetpackForce: 15
+  jetpackForce: 30
   jumpForce: 9
   jumpCooldown: 0.25
   airMultiplier: 0.4
@@ -11689,8 +11689,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5078921185212238023, guid: bb59af3ad627748598e7f6375c66849c, type: 3}
   firePoint: {fileID: 1999304862}
-  projectileSpeed: 20
-  fireInterval: 1
+  projectileSpeed: 10
+  fireInterval: 2
 --- !u!136 &593377543
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -16691,8 +16691,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5078921185212238023, guid: bb59af3ad627748598e7f6375c66849c, type: 3}
   firePoint: {fileID: 1664386750}
-  projectileSpeed: 20
-  fireInterval: 1
+  projectileSpeed: 10
+  fireInterval: 2
 --- !u!136 &988015136
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -20139,8 +20139,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5078921185212238023, guid: bb59af3ad627748598e7f6375c66849c, type: 3}
   firePoint: {fileID: 1284090890}
-  projectileSpeed: 20
-  fireInterval: 1
+  projectileSpeed: 5
+  fireInterval: 4
 --- !u!136 &1201151134
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25742,8 +25742,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 5078921185212238023, guid: bb59af3ad627748598e7f6375c66849c, type: 3}
   firePoint: {fileID: 1697061840}
-  projectileSpeed: 20
-  fireInterval: 1
+  projectileSpeed: 10
+  fireInterval: 2
 --- !u!136 &1691290301
 CapsuleCollider:
   m_ObjectHideFlags: 0

@@ -1,19 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 
 public class GameTimer : MonoBehaviour
 {
-    public TextMeshProUGUI timerText; // Use TextMeshProUGUI for TextMeshPro components
+    public TextMeshProUGUI timerText;
     private float startTime;
     private bool isRunning = false;
-
-    void Start()
-    {
-        StartTimer();
-    }
 
     void Update()
     {
@@ -42,3 +34,4 @@ public class GameTimer : MonoBehaviour
         return Time.time - startTime;
     }
 }
+

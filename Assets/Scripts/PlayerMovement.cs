@@ -50,6 +50,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (!GameManager.gameStarted)
+            return;
+
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
         MyInput();

@@ -10,10 +10,13 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed;
     public float groundDrag;
+    public float moveSpeedBalanceValue = 70f;
 
     public float jetpackForce;
 
     public float jumpForce;
+    public float jumpForceBalanceValue = 500f;
+    public float gravityScale = 3f;
     public float jumpCooldown;
     public float airMultiplier;
     public int maxJumps = 0; // Maximum number of jumps allowed
@@ -82,6 +85,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+        rb.AddForce(Physics.gravity * (gravityScale - 1) * rb.mass);
     }
 
     private void MyInput()
@@ -131,11 +135,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * moveSpeedBalanceValue, ForceMode.Force);
         }
         else if (!grounded)
         {
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * moveSpeed * moveSpeedBalanceValue * airMultiplier, ForceMode.Force);
         }
     }
 
@@ -154,7 +158,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
+        rb.AddForce(transform.up * jumpForce * jumpForceBalanceValue, ForceMode.Impulse);
         jumpsPerformed++; // Increment jumps performed
     }
 

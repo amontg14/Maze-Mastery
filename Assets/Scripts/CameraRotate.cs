@@ -21,11 +21,11 @@ public class CameraRotate : MonoBehaviour
         // Check for Q and E key presses and set the rotation direction accordingly
         float rotationInput = 0f;
         
-        if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.E))
         {
             rotationInput = -1f; // Rotate counter-clockwise
         }
-        else if (Input.GetKey(KeyCode.E))
+        else if (Input.GetKey(KeyCode.Q))
         {
             rotationInput = 1f; // Rotate clockwise
         }

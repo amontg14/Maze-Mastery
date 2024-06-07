@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.08544102, g: 0.36408654, b: 0.4361766, a: 1}
+  m_IndirectSpecularColor: {r: 0.085455075, g: 0.36392975, b: 0.43669382, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24395,7 +24395,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 115}
-  m_SizeDelta: {x: 350, y: 50}
+  m_SizeDelta: {x: 350, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1376564214
 MonoBehaviour:
@@ -24417,18 +24417,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Character Movement: W,A,S,D
-
-
-    Camera Movement: Q,E
-
-
-    Goal: reach
-    the top (TV living room)
-
-
-    Pick up power ups to unlock abilities to help
-    you navigate the cube!'
+  m_text: "Character Movement: W,A,S,D\n\nCamera Movement: Q,E\n\nInstructions: Solve
+    the maze by traversing through each face of the cube. You will find different
+    powerups with varying abilities such as double jump or a jetpack. The end goal
+    is to reach the top face (TV living room). The game tracks your score so you
+    can compete for better speedruns!. \n\nPick up power ups to unlock abilities
+    to help you navigate the cube!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
